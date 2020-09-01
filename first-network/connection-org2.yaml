@@ -1,0 +1,131 @@
+---
+name: first-network-org2
+version: 1.0.0
+client:
+  organization: Org2
+  connection:
+    timeout:
+      peer:
+        endorser: '300'
+organizations:
+  Org2:
+    mspid: Org2MSP
+    peers:
+    - peer0.org2.dmc.ajou.ac.kr
+<<<<<<< HEAD
+    - peer1.org2.dmc.ajou.ac.kr
+=======
+>>>>>>> 210ac451f2a4986a7b9007d176f467367c688afb
+    certificateAuthorities:
+    - ca.org2.dmc.ajou.ac.kr
+peers:
+  peer0.org2.dmc.ajou.ac.kr:
+<<<<<<< HEAD
+    url: grpcs://localhost:9051
+    tlsCACerts:
+      pem: |
+        -----BEGIN CERTIFICATE-----
+        MIICYjCCAgmgAwIBAgIQHl9EwatkFAaAYG8/8iAZuzAKBggqhkjOPQQDAjB8MQsw
+        CQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZy
+        YW5jaXNjbzEcMBoGA1UEChMTb3JnMi5kbWMuYWpvdS5hYy5rcjEiMCAGA1UEAxMZ
+        dGxzY2Eub3JnMi5kbWMuYWpvdS5hYy5rcjAeFw0yMDA4MzEwODIzMDBaFw0zMDA4
+        MjkwODIzMDBaMHwxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYw
+        FAYDVQQHEw1TYW4gRnJhbmNpc2NvMRwwGgYDVQQKExNvcmcyLmRtYy5ham91LmFj
+        LmtyMSIwIAYDVQQDExl0bHNjYS5vcmcyLmRtYy5ham91LmFjLmtyMFkwEwYHKoZI
+        zj0CAQYIKoZIzj0DAQcDQgAE2LdG935Q15whkkMD2anGJUhOJLR3cf/7qjAJ+8PI
+        A0kB/JIAUmMh8ZqgnylTb/rQG+EKTEIg5J9AbI4NJNzxY6NtMGswDgYDVR0PAQH/
+        BAQDAgGmMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDATAPBgNVHRMBAf8E
+        BTADAQH/MCkGA1UdDgQiBCAB1VG+ELEJhmsFJmyTQWo4Q8DViI0vqKNITTXJkO0T
+        wDAKBggqhkjOPQQDAgNHADBEAiA8C1JxgvypUbx8jESs6e6oOh6UWwAjjX8LeNs4
+        DgiymAIgIGQHyX2cjM4iSl39/+r8CzGsZAKX/clyrmeGM0WZBlE=
+        -----END CERTIFICATE-----
+        
+    grpcOptions:
+      ssl-target-name-override: peer0.org2.dmc.ajou.ac.kr
+      hostnameOverride: peer0.org2.dmc.ajou.ac.kr
+  peer1.org2.dmc.ajou.ac.kr:
+=======
+>>>>>>> 210ac451f2a4986a7b9007d176f467367c688afb
+    url: grpcs://localhost:10051
+    tlsCACerts:
+      pem: |
+        -----BEGIN CERTIFICATE-----
+<<<<<<< HEAD
+        MIICYjCCAgmgAwIBAgIQHl9EwatkFAaAYG8/8iAZuzAKBggqhkjOPQQDAjB8MQsw
+        CQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZy
+        YW5jaXNjbzEcMBoGA1UEChMTb3JnMi5kbWMuYWpvdS5hYy5rcjEiMCAGA1UEAxMZ
+        dGxzY2Eub3JnMi5kbWMuYWpvdS5hYy5rcjAeFw0yMDA4MzEwODIzMDBaFw0zMDA4
+        MjkwODIzMDBaMHwxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYw
+        FAYDVQQHEw1TYW4gRnJhbmNpc2NvMRwwGgYDVQQKExNvcmcyLmRtYy5ham91LmFj
+        LmtyMSIwIAYDVQQDExl0bHNjYS5vcmcyLmRtYy5ham91LmFjLmtyMFkwEwYHKoZI
+        zj0CAQYIKoZIzj0DAQcDQgAE2LdG935Q15whkkMD2anGJUhOJLR3cf/7qjAJ+8PI
+        A0kB/JIAUmMh8ZqgnylTb/rQG+EKTEIg5J9AbI4NJNzxY6NtMGswDgYDVR0PAQH/
+        BAQDAgGmMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDATAPBgNVHRMBAf8E
+        BTADAQH/MCkGA1UdDgQiBCAB1VG+ELEJhmsFJmyTQWo4Q8DViI0vqKNITTXJkO0T
+        wDAKBggqhkjOPQQDAgNHADBEAiA8C1JxgvypUbx8jESs6e6oOh6UWwAjjX8LeNs4
+        DgiymAIgIGQHyX2cjM4iSl39/+r8CzGsZAKX/clyrmeGM0WZBlE=
+        -----END CERTIFICATE-----
+        
+    grpcOptions:
+      ssl-target-name-override: peer1.org2.dmc.ajou.ac.kr
+      hostnameOverride: peer1.org2.dmc.ajou.ac.kr
+=======
+        MIICZDCCAgqgAwIBAgIRAINGkoF7dXsB8UIi00O6odUwCgYIKoZIzj0EAwIwfDEL
+        MAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBG
+        cmFuY2lzY28xHDAaBgNVBAoTE29yZzIuZG1jLmFqb3UuYWMua3IxIjAgBgNVBAMT
+        GXRsc2NhLm9yZzIuZG1jLmFqb3UuYWMua3IwHhcNMjAwODE1MDY0NDAwWhcNMzAw
+        ODEzMDY0NDAwWjB8MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEW
+        MBQGA1UEBxMNU2FuIEZyYW5jaXNjbzEcMBoGA1UEChMTb3JnMi5kbWMuYWpvdS5h
+        Yy5rcjEiMCAGA1UEAxMZdGxzY2Eub3JnMi5kbWMuYWpvdS5hYy5rcjBZMBMGByqG
+        SM49AgEGCCqGSM49AwEHA0IABCJCxcjdBnjNEWUhAQBm7gcufFRUUkmGC9+TxyKf
+        hGmAYD6HTHIAQFx3uGDKQqECo71SftAsIFOkty5EQ6xFqOijbTBrMA4GA1UdDwEB
+        /wQEAwIBpjAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwEwDwYDVR0TAQH/
+        BAUwAwEB/zApBgNVHQ4EIgQg+M7P0ZAMrfSRr0prWGsIAMNT3eHqmQiKlMhjmWwt
+        EQUwCgYIKoZIzj0EAwIDSAAwRQIhAIaYITbt+SpW2vRQHC3RMwAiVglPe7UYdmma
+        2UjPmptvAiBE8f2aRgMYgCaTXyKVwgxsx2EbKrbouHHB08tbz4+pbA==
+        -----END CERTIFICATE-----
+        
+    grpcOptions:
+      ssl-target-name-override: peer0.org2.dmc.ajou.ac.kr
+      hostnameOverride: peer0.org2.dmc.ajou.ac.kr
+>>>>>>> 210ac451f2a4986a7b9007d176f467367c688afb
+certificateAuthorities:
+  ca.org2.dmc.ajou.ac.kr:
+    url: https://localhost:8054
+    caName: ca-org2
+    tlsCACerts:
+      pem: |
+        -----BEGIN CERTIFICATE-----
+<<<<<<< HEAD
+        MIICXjCCAgSgAwIBAgIRAOP5aJal25lM+ixQOtxaqyowCgYIKoZIzj0EAwIweTEL
+        MAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBG
+        cmFuY2lzY28xHDAaBgNVBAoTE29yZzIuZG1jLmFqb3UuYWMua3IxHzAdBgNVBAMT
+        FmNhLm9yZzIuZG1jLmFqb3UuYWMua3IwHhcNMjAwODMxMDgyMzAwWhcNMzAwODI5
+        MDgyMzAwWjB5MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQG
+        A1UEBxMNU2FuIEZyYW5jaXNjbzEcMBoGA1UEChMTb3JnMi5kbWMuYWpvdS5hYy5r
+        cjEfMB0GA1UEAxMWY2Eub3JnMi5kbWMuYWpvdS5hYy5rcjBZMBMGByqGSM49AgEG
+        CCqGSM49AwEHA0IABIVGhy1zdMv9kdQx9P643UNw9F2t3noEIFioCKNAefiW4r2o
+        Npxphao237wZfGO0aceZMZypQGVniTighj7Fpx+jbTBrMA4GA1UdDwEB/wQEAwIB
+        pjAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwEwDwYDVR0TAQH/BAUwAwEB
+        /zApBgNVHQ4EIgQg4D8rI8dzNovT7xEQhBvN+MhU5auP3FZ5pCUHnNXEDgowCgYI
+        KoZIzj0EAwIDSAAwRQIhANE2gfOV+ldo7aYjbMWpzgPMRwAd+xaztxQRoP4zlx5T
+        AiAwaDsCWogh4JmTtvSIPcFjDCtjDTx1B99XnAGEtRrvHw==
+=======
+        MIICXDCCAgOgAwIBAgIQIKzCMpPisNADULmtm2TenTAKBggqhkjOPQQDAjB5MQsw
+        CQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZy
+        YW5jaXNjbzEcMBoGA1UEChMTb3JnMi5kbWMuYWpvdS5hYy5rcjEfMB0GA1UEAxMW
+        Y2Eub3JnMi5kbWMuYWpvdS5hYy5rcjAeFw0yMDA4MTUwNjQ0MDBaFw0zMDA4MTMw
+        NjQ0MDBaMHkxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYD
+        VQQHEw1TYW4gRnJhbmNpc2NvMRwwGgYDVQQKExNvcmcyLmRtYy5ham91LmFjLmty
+        MR8wHQYDVQQDExZjYS5vcmcyLmRtYy5ham91LmFjLmtyMFkwEwYHKoZIzj0CAQYI
+        KoZIzj0DAQcDQgAE7uO3SnOujmwi0NWhgA1pj5ezMqOHY6uftNPW3Ru9BODVImZk
+        dzBBfxvEm2ZjedDumltUAvU/Q4HRGNdxioCipqNtMGswDgYDVR0PAQH/BAQDAgGm
+        MB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDATAPBgNVHRMBAf8EBTADAQH/
+        MCkGA1UdDgQiBCBIzZ7TpirErRdrfS6eF5NcEjkfacHECz0BmnlrJoGK4TAKBggq
+        hkjOPQQDAgNHADBEAiBFpVhZNKP6D9RErh1bIPyI/Abtdb//GNtWqs/1UHtUcQIg
+        CiQzW+0ZdiZBTP/Q9Ap5V0I8MwHMKbEpK2ioete5rQM=
+>>>>>>> 210ac451f2a4986a7b9007d176f467367c688afb
+        -----END CERTIFICATE-----
+        
+    httpOptions:
+      verify: false
